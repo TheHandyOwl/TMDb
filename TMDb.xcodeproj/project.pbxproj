@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0789F1821F88CB5200873379 /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1811F88CB5200873379 /* DetailNavigator.swift */; };
 		0789F1841F88CDD000873379 /* PhoneDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */; };
+		0789F1871F88E4F100873379 /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1861F88E4F100873379 /* SearchNavigator.swift */; };
+		0789F1891F88E63100873379 /* PhoneSearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1881F88E63100873379 /* PhoneSearchNavigator.swift */; };
 		0790895C1F8817DE00AF3C1A /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0790895B1F8817DE00AF3C1A /* AppAssembly.swift */; };
 		992D27B81F7FFCA600BA79DE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */; };
 		992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */; };
@@ -148,6 +150,8 @@
 /* Begin PBXFileReference section */
 		0789F1811F88CB5200873379 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
 		0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
+		0789F1861F88E4F100873379 /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
+		0789F1881F88E63100873379 /* PhoneSearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSearchNavigator.swift; sourceTree = "<group>"; };
 		0790895B1F8817DE00AF3C1A /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		992D27B71F7FFCA600BA79DE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		992D27BA1F7FFD5E00BA79DE /* DetailSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSection.swift; sourceTree = "<group>"; };
@@ -276,6 +280,15 @@
 			path = Navigators;
 			sourceTree = "<group>";
 		};
+		0789F1851F88E4B100873379 /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				0789F1861F88E4F100873379 /* SearchNavigator.swift */,
+				0789F1881F88E63100873379 /* PhoneSearchNavigator.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
 		992D27B91F7FFD1F00BA79DE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				997A44241F7AA9780094E928 /* DI */,
+				0789F1851F88E4B100873379 /* Navigators */,
 				996690C21F7A989200AF16B3 /* Presentation */,
 				993F1E811F7A9ED3004FE33B /* Domain */,
 			);
@@ -842,6 +856,8 @@
 				997A44281F7AAB350094E928 /* WebServiceAssembly.swift in Sources */,
 				992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */,
 				99A4653A1F7CE21C007F3B5B /* PosterStripCell.swift in Sources */,
+				0789F1871F88E4F100873379 /* SearchNavigator.swift in Sources */,
+				0789F1891F88E63100873379 /* PhoneSearchNavigator.swift in Sources */,
 				993F1E7C1F7A9C0E004FE33B /* Show.swift in Sources */,
 				99A465351F7CDCAD007F3B5B /* DetailAboutView.swift in Sources */,
 				997A44231F7AA75A0094E928 /* Date+Utilities.swift in Sources */,

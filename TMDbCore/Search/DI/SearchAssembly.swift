@@ -15,10 +15,18 @@ final class SearchAssembly {
 		self.imageLoadingAssembly = imageLoadingAssembly
 	}
 
+    
+    // Lo pasamos abajo a la extensión y lo cambiamos de nombre
+    /*
 	func viewController() -> SearchResultsViewController {
 		return SearchResultsViewController(presenter: presenter(),
 		                                   resultPresenter: resultPresenter())
 	}
+     */
+    
+    func searchNavigator() -> SearchNavigator {
+        return PhoneSearchNavigator(viewControllerProvider: self)
+    }
 
 	func presenter() -> SearchResultsPresenter {
 		return SearchResultsPresenter()
@@ -27,4 +35,11 @@ final class SearchAssembly {
 	func resultPresenter() -> SearchResultPresenter {
 		return SearchResultPresenter(imageRepository: imageLoadingAssembly.imageRepository)
 	}
+}
+
+extension SearchAssembly: SearchResultsViewControllerProvider {
+    func searchResultsViewController() -> SearchResultsViewController {
+        return SearchResultsViewController(presenter: presenter(),
+                                           resultPresenter: resultPresenter())
+    }
 }
