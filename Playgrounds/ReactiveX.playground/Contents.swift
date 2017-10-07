@@ -125,7 +125,7 @@ let size = cell.imageView?.image?.size
 let size2 = cell.imageView.flatMap { $0.image }.flatMap { $0.size }
 
 // Sin la siguiente línea se imprime el mensaje y cancela cuando termina de reicbir los datos
-//disposable.dispose()    // Si pongo el dispose se cancela y no se imprime el mensaje anterior
-// Si se ejecuta cuando realmentetermina, cancela algo que ya no existe
+//disposable.dispose()  // Si pongo el dispose se cancela y no se imprime el mensaje anterior
+                        // Si se ejecuta cuando realmentetermina, cancela algo que ya no existe
 
 
