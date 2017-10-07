@@ -9,12 +9,12 @@
 import Foundation
 
 struct Movie: Decodable {
-	let identifier: Int64
-	let title: String
-	let posterPath: String?
-	let backdropPath: String?
-	let releaseDate: Date?
-	let genreIdentifiers: [Int]?
+	let identifier          : Int64
+	let title               : String
+	let posterPath          : String?
+	let backdropPath        : String?
+	let releaseDate         : Date?
+	let genreIdentifiers    : [Int]?
 
 	private enum CodingKeys: String, CodingKey {
 		case identifier = "id"

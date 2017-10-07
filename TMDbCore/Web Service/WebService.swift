@@ -33,7 +33,8 @@ final internal class WebService {
 		self.configuration = configuration
 	}
 
-	func load<T>(_ type: T.Type, from endpoint: Endpoint) -> Observable<T> where T: Decodable {
+    // Forzamos que el genérico sea Decodable para mapear el JSON fácilmente
+    func load<T: Decodable>(_ type: T.Type, from endpoint: Endpoint) -> Observable<T> {
 		let decoder = self.decoder
 		let request = endpoint.request(with: baseURL, adding: configuration.parameters)
 
