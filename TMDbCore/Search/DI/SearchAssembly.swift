@@ -9,22 +9,40 @@
 import Foundation
 
 final class SearchAssembly {
-	private let imageLoadingAssembly: ImageLoadingAssembly
+    private let imageLoadingAssembly: ImageLoadingAssembly
+    private let detailAssembly: DetailAssembly
 
-	init(imageLoadingAssembly: ImageLoadingAssembly) {
-		self.imageLoadingAssembly = imageLoadingAssembly
+	init(imageLoadingAssembly: ImageLoadingAssembly,
+         detailAssembly: DetailAssembly) {
+        self.imageLoadingAssembly = imageLoadingAssembly
+        self.detailAssembly = detailAssembly
 	}
 
+    
+    // Lo pasamos abajo a la extensión y lo cambiamos de nombre
+    /*
 	func viewController() -> SearchResultsViewController {
 		return SearchResultsViewController(presenter: presenter(),
 		                                   resultPresenter: resultPresenter())
 	}
+     */
+    
+    func searchNavigator() -> SearchNavigator {
+        return PhoneSearchNavigator(viewControllerProvider: self)
+    }
 
 	func presenter() -> SearchResultsPresenter {
-		return SearchResultsPresenter()
+        return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator())
 	}
 
 	func resultPresenter() -> SearchResultPresenter {
 		return SearchResultPresenter(imageRepository: imageLoadingAssembly.imageRepository)
 	}
+}
+
+extension SearchAssembly: SearchResultsViewControllerProvider {
+    func searchResultsViewController() -> SearchResultsViewController {
+        return SearchResultsViewController(presenter: presenter(),
+                                           resultPresenter: resultPresenter())
+    }
 }

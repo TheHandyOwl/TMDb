@@ -10,6 +10,11 @@ import RxSwift
 import RxCocoa
 
 /// Displays search results
+
+protocol SearchResultsViewControllerProvider: class {
+    func searchResultsViewController() -> SearchResultsViewController
+}
+
 class SearchResultsViewController: UITableViewController {
 
 	// MARK: - Properties
