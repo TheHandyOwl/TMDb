@@ -21,7 +21,9 @@ final class SearchResultsPresenter {
 	//private(set) lazy var searchResults: Observable<[SearchResult]> = Observable
     private(set) lazy var searchResults: Observable<[SearchResult]> = query.asObservable()
         .distinctUntilChanged()
+        //.debug() // Saldrá todo lo que tecleemos por consola
         .debounce(0.3, scheduler: MainScheduler.instance)
+        //.debug() // Tras el debounce sómo muestra los textos para las búsquedas por consola y no todo lo que teclea
         .flatMapLatest { [weak self] query -> Observable<[SearchResult]> in
             // Vamos a esperar a que el usuario teclee al menos 2 letras y devolveremos un array vacío si es menos
             // Self no nulo y caracteres mayor que 2, si es menos entra en el guard / else
