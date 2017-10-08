@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		073835731F8A183900AA5389 /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073835721F8A183900AA5389 /* FeaturedRepository.swift */; };
 		07408A0E1F8984C400A06E6E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07408A0D1F8984C400A06E6E /* Page.swift */; };
 		0789F1821F88CB5200873379 /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1811F88CB5200873379 /* DetailNavigator.swift */; };
 		0789F1841F88CDD000873379 /* PhoneDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */; };
@@ -149,6 +150,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		073835721F8A183900AA5389 /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
 		07408A0D1F8984C400A06E6E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		0789F1811F88CB5200873379 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
 		0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
@@ -273,6 +275,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		073835711F8A181B00AA5389 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				073835721F8A183900AA5389 /* FeaturedRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		07408A0C1F8984BA00A06E6E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +555,7 @@
 		99C5C90B1F7B86CD0038688F /* Featured */ = {
 			isa = PBXGroup;
 			children = (
+				073835711F8A181B00AA5389 /* Repositories */,
 				99C5C90E1F7B86F90038688F /* DI */,
 				07408A0C1F8984BA00A06E6E /* Domain */,
 				99C5C90D1F7B86F20038688F /* Presentation */,
@@ -867,6 +878,7 @@
 				997A44281F7AAB350094E928 /* WebServiceAssembly.swift in Sources */,
 				992D27BB1F7FFD5E00BA79DE /* DetailSection.swift in Sources */,
 				07408A0E1F8984C400A06E6E /* Page.swift in Sources */,
+				073835731F8A183900AA5389 /* FeaturedRepository.swift in Sources */,
 				99A4653A1F7CE21C007F3B5B /* PosterStripCell.swift in Sources */,
 				0789F1871F88E4F100873379 /* SearchNavigator.swift in Sources */,
 				0789F1891F88E63100873379 /* PhoneSearchNavigator.swift in Sources */,
