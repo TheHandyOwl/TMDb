@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		073835731F8A183900AA5389 /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073835721F8A183900AA5389 /* FeaturedRepository.swift */; };
+		073835771F8A2CEA00AA5389 /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073835761F8A2CEA00AA5389 /* SearchResultsRepository.swift */; };
 		07408A0E1F8984C400A06E6E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07408A0D1F8984C400A06E6E /* Page.swift */; };
 		0789F1821F88CB5200873379 /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1811F88CB5200873379 /* DetailNavigator.swift */; };
 		0789F1841F88CDD000873379 /* PhoneDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */; };
@@ -151,6 +152,7 @@
 
 /* Begin PBXFileReference section */
 		073835721F8A183900AA5389 /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
+		073835761F8A2CEA00AA5389 /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		07408A0D1F8984C400A06E6E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		0789F1811F88CB5200873379 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
 		0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
@@ -283,6 +285,14 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		073835751F8A2CCF00AA5389 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				073835761F8A2CEA00AA5389 /* SearchResultsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		07408A0C1F8984BA00A06E6E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +374,7 @@
 		996690C01F7A973200AF16B3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				073835751F8A2CCF00AA5389 /* Repositories */,
 				997A44241F7AA9780094E928 /* DI */,
 				0789F1851F88E4B100873379 /* Navigators */,
 				996690C21F7A989200AF16B3 /* Presentation */,
@@ -890,6 +901,7 @@
 				99A4652E1F7CCF93007F3B5B /* DetailViewController.swift in Sources */,
 				99C5C9101F7B87950038688F /* CardView.swift in Sources */,
 				996EAFE11F8007070060FD98 /* DetailHeaderPresenter.swift in Sources */,
+				073835771F8A2CEA00AA5389 /* SearchResultsRepository.swift in Sources */,
 				99B9A33F1F73F4D0004F883E /* WebServiceConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
