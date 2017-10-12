@@ -165,6 +165,7 @@
 		073AA3321F8FA1130014692D /* FeaturedRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepositoryMock.swift; sourceTree = "<group>"; };
 		073AA3341F8FA1910014692D /* FeaturedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenterTest.swift; sourceTree = "<group>"; };
 		07408A0D1F8984C400A06E6E /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		077D29961F8FFC9E007124B3 /* Keys.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text; path = Keys.xcconfig.example; sourceTree = "<group>"; };
 		0789F1811F88CB5200873379 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
 		0789F1831F88CDD000873379 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
 		0789F1861F88E4F100873379 /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
@@ -591,6 +592,7 @@
 			isa = PBXGroup;
 			children = (
 				99B9A3461F74072C004F883E /* Keys.xcconfig */,
+				077D29961F8FFC9E007124B3 /* Keys.xcconfig.example */,
 			);
 			path = Config;
 			sourceTree = "<group>";
