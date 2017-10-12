@@ -56,7 +56,6 @@
 		9995F3191F73A228009BA4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9995F3171F73A228009BA4D7 /* LaunchScreen.storyboard */; };
 		9995F3241F73A229009BA4D7 /* TMDbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9995F3231F73A229009BA4D7 /* TMDbTests.swift */; };
 		9995F3711F73A4E2009BA4D7 /* TMDbCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; };
-		9995F3781F73A4E2009BA4D7 /* TMDbCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */; };
 		9995F37A1F73A4E2009BA4D7 /* TMDbCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 9995F36A1F73A4E2009BA4D7 /* TMDbCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9995F37D1F73A4E2009BA4D7 /* TMDbCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; };
 		9995F37E1F73A4E2009BA4D7 /* TMDbCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9995F3681F73A4E2009BA4D7 /* TMDbCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -215,7 +214,6 @@
 		9995F36A1F73A4E2009BA4D7 /* TMDbCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMDbCore.h; sourceTree = "<group>"; };
 		9995F36B1F73A4E2009BA4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9995F3701F73A4E2009BA4D7 /* TMDbCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TMDbCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbCoreTests.swift; sourceTree = "<group>"; };
 		9995F3791F73A4E2009BA4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9995F3861F73BDD0009BA4D7 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		9995F3871F73BDD0009BA4D7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -524,7 +522,6 @@
 		9995F3761F73A4E2009BA4D7 /* TMDbCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				9995F3771F73A4E2009BA4D7 /* TMDbCoreTests.swift */,
 				9995F3791F73A4E2009BA4D7 /* Info.plist */,
 				073AA3301F8FA0FC0014692D /* DetailNavigatorMock.swift */,
 				073AA3341F8FA1910014692D /* FeaturedPresenterTest.swift */,
@@ -954,7 +951,6 @@
 				073AA3311F8FA0FC0014692D /* DetailNavigatorMock.swift in Sources */,
 				073AA3331F8FA1130014692D /* FeaturedRepositoryMock.swift in Sources */,
 				073AA3351F8FA1910014692D /* FeaturedPresenterTest.swift in Sources */,
-				9995F3781F73A4E2009BA4D7 /* TMDbCoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

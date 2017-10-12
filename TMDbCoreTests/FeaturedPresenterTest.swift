@@ -46,5 +46,25 @@ class FeaturedPresenterTest: XCTestCase {
         XCTAssertEqual(.show, mediaType)
     }
     
+    func testFeaturedPresenter_didSelectMovie_navigatesToMovie() {
+        // Given
+        let movie = Movie(identifier: 330459,
+                        title: "Test",
+                        posterPath: nil,
+                        backdropPath: nil,
+                        releaseDate: nil,
+                        genreIdentifiers: nil)
+        
+        // When
+        sut.didSelect(movie: movie)
+        
+        // Then
+        XCTAssertTrue(detailNavigatorMock.showDetailCalled)
+        
+        let (identifier, mediaType) = detailNavigatorMock.showDetailParameters!
+        XCTAssertEqual(330459, identifier)
+        XCTAssertEqual(.movie, mediaType)
+    }
+    
 }
 
