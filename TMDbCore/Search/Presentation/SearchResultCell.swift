@@ -17,6 +17,8 @@ final class SearchResultCell: UITableViewCell, ReusableView, NibLoadableView {
 
 	override func prepareForReuse() {
 		super.prepareForReuse()
+        
+        posterView.image = nil
 		disposeBag = DisposeBag()
 	}
 }

@@ -44,7 +44,7 @@ final class SearchResultsPresenter {
     
 	/// Called by the view when the user selects a search result
 	func didSelect(searchResult: SearchResult) {
-		// TODO: implement
+		// TODO: implement - DONE
         switch searchResult {
         case .movie(let movie):
             detailNavigator.showDetail(withIdentifier: movie.identifier, mediaType: .movie)

@@ -13,6 +13,7 @@ internal enum Endpoint {
     case moviesNowPlaying(region: String, page: Int)
     case showsOnTheAir(page: Int)
     case searchResults(query: String, page: Int) // Definimos este Endpoint
+    case movie(identifier: Int64)
 }
 
 internal extension Endpoint {
@@ -52,6 +53,8 @@ private extension Endpoint {
             return "tv/on_the_air"
         case .searchResults:
             return "search/multi"
+        case .movie(let identifier):
+            return "movie/\(identifier)"
         }
 	}
     var parameters: [String: String] {
@@ -70,6 +73,8 @@ private extension Endpoint {
                 "query" : query,
                 "page"  : String(page)
             ]
+        case .movie:
+            return [ "append_to_response": "credits" ]
         }
     }
 }

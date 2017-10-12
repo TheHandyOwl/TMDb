@@ -11,7 +11,8 @@ import TMDbCore
 
 final class AppAssembly {
     private(set) lazy var window = UIWindow(frame: UIScreen.main.bounds)
-//    private(set) lazy var navigationController = UINavigationController()
+
+    // Tenemos que meter el rootVC en el AppDelegate para evitar referencias cíclicas.
     private(set) lazy var navigationController = UINavigationController()
     private(set) lazy var coreAssembly = CoreAssembly(navigationController: navigationController)
 }

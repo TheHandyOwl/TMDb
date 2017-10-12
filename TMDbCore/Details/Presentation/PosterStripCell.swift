@@ -24,6 +24,8 @@ final class PosterStripCell: UICollectionViewCell, ReusableView, NibLoadableView
 
 	override func prepareForReuse() {
 		super.prepareForReuse()
+        
+        self.posterView.image = nil
 		disposeBag = DisposeBag()
 	}
 }
