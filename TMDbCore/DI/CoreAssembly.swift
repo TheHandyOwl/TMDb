@@ -10,7 +10,8 @@ import Foundation
 
 final public class CoreAssembly {
 	private(set) lazy var detailAssembly = DetailAssembly(imageLoadingAssembly: imageLoadingAssembly,
-                                                          navigationController: navigationController)
+                                                          navigationController: navigationController,
+                                                          webServiceAssembly: webServiceAssembly)
     public private(set) lazy var featuredAssembly = FeaturedAssembly(imageLoadingAssembly: imageLoadingAssembly,
                                                                      detailAssembly: detailAssembly,
                                                                      searchAssembly: searchAssembly,

@@ -41,12 +41,12 @@ final class FeaturedPresenter {
 	}
 
 	func didSelect(show: Show) {
-		// TODO: implement
+		// TODO: implement - DONE
         detailNavigator.showDetail(withIdentifier: show.identifier, mediaType: .show)
 	}
 
 	func didSelect(movie: Movie) {
-		// TODO: implement
+		// TODO: implement - DONE
         detailNavigator.showDetail(withIdentifier: movie.identifier, mediaType: .movie)
 	}
 }
