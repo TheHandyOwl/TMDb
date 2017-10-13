@@ -14,8 +14,8 @@ struct ShowDetail: Decodable {
     let posterPath          : String?
     let backdropPath        : String?
     let firstAirDate        : String?
-    let genreIdentifiers    : String?
-    let runtime             : Int
+    //let genreIdentifiers    : String?
+    let runtime             : [Int]
     let overview            : String?
     let credits             : Credits?
     
@@ -25,7 +25,7 @@ struct ShowDetail: Decodable {
         case posterPath = "poster_path"
         case backdropPath = "backdrop_path"
         case firstAirDate = "first_air_date"
-        case genreIdentifiers = "genre_ids"
+        //case genreIdentifiers = "genre_ids"
         case runtime = "episode_run_time"
         case overview
         case credits
